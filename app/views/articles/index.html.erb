@@ -1,0 +1,14 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-sm-8 offset-sm-2">
+      <% @articles.each do |article| %>
+        <article class="mb-3">
+          <h2>
+            <%= article.title %>
+          </h2>
+          <%= article.content[0..50]...%>
+        </article>
+      <% end %>
+    </div>
+  </div>
+</div>

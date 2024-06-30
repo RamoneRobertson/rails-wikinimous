@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/faker-ruby/faker.git
+  revision: 3eaedf4c74e943b8e36bf1d9a02c6fdde287b2ba
+  branch: main
+  specs:
+    faker (3.4.1)
+      i18n (>= 1.8.11, < 2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -102,6 +110,7 @@ GEM
     drb (2.2.1)
     error_highlight (0.6.0)
     erubi (1.13.0)
+    forgery (0.8.1)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.5)
@@ -264,6 +273,8 @@ DEPENDENCIES
   capybara
   debug
   error_highlight (>= 0.4.0)
+  faker!
+  forgery
   importmap-rails
   jbuilder
   puma (>= 5.0)
