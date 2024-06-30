@@ -7,7 +7,7 @@ puts 'Creating Articles...'
   # Forgery(:lorem_ipsum).words(1000)
   Article.create(
     title: Faker::GreekPhilosophers.quote,
-    content: Faker::Lorem.paragraph(sentence_count: rand(15..40))
+    content: Faker::Lorem.paragraph(sentence_count: rand(150..200))
   )
 end
 

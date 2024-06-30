@@ -1,1 +1,21 @@
-<h1><%= @article.title %></h1>
+<div class="container mt3">
+  <div class="row">
+    <div class="col-sm-8 offset-sm-2">
+      <article>
+        <h1><%= @article.title %></h1>
+        <hr class="mb-3">
+        <p><%= @article.content[0..50] %>.</p>
+        <h2><%= Faker::Theater.play %></h2>
+        <p><%= @article.content[0..225] %></p>
+        <p><%= @article.content[226..450] %></p>
+        <p><%= @article.content[451..675] %></p>
+        <h2><%= Faker::Movies::StarWars.quote %></h2>
+        <p><%= @article.content[675..900] %></p>
+        <p><%= @article.content[901..1125] %></p>
+        <p><%= @article.content[0..225] %></p>
+        <p><%= @article.content[226..450] %></p>
+        <p><%= @article.content[451..675] %></p>
+      </article>
+    </div>
+  </div>
+</div>
